@@ -1,4 +1,4 @@
-#to run the file 
+# To run the file 
 
 gcc filename -o main
 .\main
