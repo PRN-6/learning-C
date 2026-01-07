@@ -24,28 +24,44 @@
 //     return 0;
 // }
 
+// #include <stdio.h>
+
+// int main() {
+//     FILE *fp;
+//     int roll;
+//     char name[20];
+//     float marks;
+
+//     fp = fopen("data.txt", "r");
+
+//     if (fp == NULL) {
+//         printf("File not found");
+//         return 0;
+//     }
+
+//     fscanf(fp, "%d %s %f", &roll, name, &marks);
+
+//     printf("Roll: %d\n", roll);
+//     printf("Name: %s\n", name);
+//     printf("Marks: %.2f\n", marks);
+
+//     fclose(fp);
+//     return 0;
+// }
+
 #include <stdio.h>
 
 int main() {
     FILE *fp;
-    int roll;
-    char name[20];
-    float marks;
 
-    fp = fopen("data.txt", "r");
+    fp = fopen("test.txt", "r");   // open file in read mode
 
     if (fp == NULL) {
         printf("File not found");
-        return 0;
+    } else {
+        printf("File opened successfully");
+        fclose(fp);
     }
 
-    fscanf(fp, "%d %s %f", &roll, name, &marks);
-
-    printf("Roll: %d\n", roll);
-    printf("Name: %s\n", name);
-    printf("Marks: %.2f\n", marks);
-
-    fclose(fp);
     return 0;
 }
-
