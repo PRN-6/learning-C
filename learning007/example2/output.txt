@@ -1,0 +1,4 @@
+Name: john
+Age: 21
+Course: Computer Science
+File writing using fputs()
